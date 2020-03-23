@@ -1,0 +1,199 @@
+:root {
+    --theme: rgb(0, 163, 35);
+    --themeRgba: rgba(0, 85, 7, 0.466);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    max-width: 1280px;
+    margin: auto;
+}
+
+h1, h2, h3, #main-nav a {
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+.flex3 {
+    flex: 1;
+    width: 30%;
+}
+
+.flex4 {
+    flex: 1;
+    width: 22%;
+}
+
+.short-padding {
+    padding: .5em;
+}
+
+.medium-padding {
+    padding: 1.2em 0;
+}
+
+.button {
+    padding: 0.5em;
+    border: none;
+}
+
+.theme-bgc {
+    background-color: var(--theme);
+    color: white;
+}
+
+/* NAVIGATION */
+
+.logo {
+    width: 7em;
+    height: 7em;
+}
+
+#main-nav {
+    align-items: flex-end;
+    width: 100%;
+    justify-content: center;
+}
+
+#main-nav a {
+    margin: 0 40px;
+    color: black;
+    font-weight: bold;
+}
+
+/* BANNER */
+
+#banner {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+#banner img {
+    position: absolute;
+    top: -75%;
+}
+
+#banner figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--themeRgba);
+    color: white;
+    padding: 0 1em;
+}
+
+#banner .button {
+    border-radius: 5px;
+}
+
+/* MAIN CONTENT */
+
+main {
+    border-bottom: 4px solid var(--theme);
+    padding-top: 1em;
+}
+
+article {
+    padding: 0 2em 0 0;
+    text-align: justify;
+}
+
+aside {
+    padding: 0 1em 1em 1em;
+    position: relative;
+}
+
+aside figure {
+    width: max-content;
+    margin: auto;
+}
+
+aside img {
+    width: 7em;
+    height: 7em;
+}
+
+#socials {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#socials i {
+    font-size: 3em;
+    padding-bottom: .3em;
+}
+
+/* FOOTEr */
+
+#contact {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#contact input {
+    width: 60%;
+    padding: .4em .5em;
+    margin-bottom: 1em;
+}
+
+#contact .button {
+    width: max-content;
+    cursor: pointer;
+}
+
+#relations-gallery {
+    justify-content: space-around;
+}
+
+#relations-gallery figure {
+    width: 30%;
+    text-align: center;
+}
+
+#relations-gallery img {
+    width: 70%;
+}
+
